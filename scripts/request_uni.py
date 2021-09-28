@@ -11,6 +11,7 @@ land = "30"
 
 PARAMS = {"eID":eID, "conf":conf, "sSearch_6":sSearch_6, "land":land}
 
+
 def main():
     r = requests.get(url=URL, params=PARAMS)
     data = r.json()
@@ -27,6 +28,7 @@ def main():
         print(uni_id, name, city, accreditation, sep=", ")
 
     # print(data)
+
 
 if __name__ == "__main__":
     main()
